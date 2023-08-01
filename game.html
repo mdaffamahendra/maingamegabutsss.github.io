@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>gamegabutsss</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body class="bg-primary">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-primary navbar-dark border-bottom border-light fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand nama-brand" href="#">gamegabutsss</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto fw-bold h4">
+            <li class="nav-item me-4">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Game
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#suit"
+                    >Batu, Gunting, Kertas</a
+                  >
+                </li>
+                <li><a class="dropdown-item disabled" href="#">Tebak Angka</a></li>
+                <li><a class="dropdown-item disabled" href="#">Remake Animal Kaiser</a></li>
+                <li><a class="dropdown-item disabled" href="#">Quiz</a></li>
+              </ul>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link disabled" href="#">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav End -->
+
+    <!-- Hero -->
+    <section id="home" class="bg-primary home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center py-5 text-lg-start py-lg-0">
+            <h1 class="fw-bold lets-play">Lets Play!</h1>
+            <p class="deskripsi-home">
+              Tunjukkan keahlianmu dalam mengalahkan semuanya, coba gamegabutsss sekarang!
+            </p>
+            <button
+              class="tombol-lets-play"
+            >
+              <a
+                href="#suit"
+                class="tulisan-tombol-lets-play"
+                style="text-decoration: none;"
+                >Play</a
+              >
+            </button>
+          </div>
+          <div class="col-lg-8">
+            <div class="ilustrasi text-center ms-5">
+              <img src="image/ilustrasi.png" alt="" width="650" height="500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- game suit -->
+    <section id="suit">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="fw-bold">Batu, Gunting, Kertas</h1>
+            <p>Mereka saling mengalahkan, jangan biarkan anda yang kalah!</p>
+          </div>
+        </div>
+
+        <div class="row py-3">
+          <div class="col text-center">
+            <h1 class="fw-bold">Pilih yang ingin kamu gunakan</h1>
+          </div>
+        </div>
+
+        <div class="row my-3 text-center">
+          <div class="col-4">
+            <div class="card text-center mx-auto card-all">
+              <img src="image/batu.png" class="card-img-top batu" alt="" />
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Batu</h4>
+                <button class="btn btn-primary pilih text-light" value="batu">
+                  Pilih
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center mx-auto card-all">
+              <img
+                src="image/gunting.png"
+                class="card-img-top gunting"
+                alt=""
+              />
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Gunting</h4>
+                <button
+                  class="btn btn-primary pilih text-light"
+                  value="gunting"
+                >
+                  Pilih
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center mx-auto card-all">
+              <img
+                src="image/kertas.png"
+                class="card-img-top kertas"
+                alt="kertas"
+              />
+              <div class="card-body">
+                <h4 class="card-title fw-bold">Kertas</h4>
+                <button class="btn btn-primary pilih text-light" value="kertas">
+                  Pilih
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="mainbagutas">
+          <div class="col-4 text-center order-1 offset-2 offset-lg-1">
+            <h1 class="fw-bold">You</h1>
+            <div class="card text-center mx-auto card-all">
+              <img
+                src="image/ilustrasi.png"
+                class="card-img-top pick"
+                alt="kertas"
+              />
+              <div class="card-body">
+                <h4 class="card-title fw-bold info-player"></h4>
+                <h2 class="info-player"></h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-2 text-center d-flex flex-column justify-content-center order-lg-2 order-3 mt-lg-0 mt-3"
+          >
+            <button
+              class="btn btn-success text-light tombol-mulai my-2 disabled"
+            >
+              Mulai
+            </button>
+            <button
+              class="btn btn-secondary text-light tombol-restart disabled"
+            >
+              Restart
+            </button>
+            <h1 class="fw-bold mt-2 hasil text-center"></h1>
+
+            <div class="row">
+              <div class="col-6">
+                <h1 class="scorePlayer fw-bold">0</h1>
+              </div>
+              <div class="col-6">
+                <h1 class="scoreComputer fw-bold">0</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 text-center order-lg-3 order-2">
+            <h1 class="fw-bold">Computer</h1>
+            <div class="card text-center mx-auto card-all">
+              <img src="image/ilustrasi.png" class="card-img-top com" alt="" />
+              <div class="card-body">
+                <h4 class="card-title fw-bold info-computer"></h4>
+                <h2 class="info-com"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-top mt-5 py-3">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12">
+            <p class="created">Created by <a href="https://www.instagram.com/mdmp.gg/" class="text-light fw-bold">Muhammad Daffa</a></p>
+          </div>
+          <div class="col-12">
+            <p>Version 0.0.1</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>

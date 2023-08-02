@@ -45,10 +45,9 @@ pilih.forEach((p) => {
     imagePick.alt = this.value;
     infoPlayer.innerHTML = this.value;
     mulai.classList.remove("disabled");
-    window.location.href = '#mainbagutas';
+    window.location.href = "#mainbagutas";
   });
 });
-
 
 let scoreplayer = 0;
 let scorecomputer = 0;
@@ -79,33 +78,30 @@ mulai.addEventListener("click", function () {
     } else if (result == "YOU WIN") {
       scoreplayer++;
       scorePlayer.innerHTML = scoreplayer;
-      if(scoreplayer == 10){
-        mulai.classList.add('disabled');
-        restart.classList.remove('disabled');
-        mulai.innerHTML = 'Mulai';
-        scorePlayer.style.display = 'none';
-        scoreComputer.style.display = 'none';
-        hasil.innerHTML = 'Selamat kamu menang!!';
-        pilih.forEach((e) => e.classList.add('disabled') );
+      if (scoreplayer == 10) {
+        mulai.classList.add("disabled");
+        restart.classList.remove("disabled");
+        mulai.innerHTML = "Mulai";
+        scorePlayer.style.display = "none";
+        scoreComputer.style.display = "none";
+        hasil.innerHTML = "Selamat kamu menang!!";
+        pilih.forEach((e) => e.classList.add("disabled"));
       }
     } else if (result == "YOU LOSE") {
       scorecomputer++;
       scoreComputer.innerHTML = scorecomputer;
-      if(scorecomputer == 10){
-        mulai.innerHTML = 'Mulai';
-        mulai.classList.add('disabled');
-        pilih.forEach((e) => e.classList.add('disabled'));
-        scorePlayer.style.display = 'none';
-        scoreComputer.style.display = 'none';
-        hasil.innerHTML = 'Kamu kalah tetap semangat!!!';
-        pilih.classList.add('disabled');
+      if (scorecomputer == 10) {
+        mulai.innerHTML = "Mulai";
+        mulai.classList.add("disabled");
+        restart.classList.remove("disabled");
+        pilih.forEach((e) => e.classList.add("disabled"));
+        scorePlayer.style.display = "none";
+        scoreComputer.style.display = "none";
+        hasil.innerHTML = "Kamu kalah tetap semangat!!!";
+        pilih.classList.add("disabled");
       }
     }
-
-
-
   }, 1000);
-
 });
 
 restart.addEventListener("click", function (e) {
@@ -113,6 +109,4 @@ restart.addEventListener("click", function (e) {
   e.preventDefault();
 });
 
-function tambah() {
-
-}
+function tambah() {}

@@ -100,7 +100,6 @@ body {
     width: 280px;
     height: 280px;
     overflow-x: hidden;
-    margin-top: -3.2em;
   }
 
   .card-all {
@@ -120,6 +119,5 @@ body {
     width: 240px;
     height: 240px;
     overflow-x: hidden;
-    margin-top: -3.2em;
   }
 }
